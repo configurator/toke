@@ -1,0 +1,34 @@
+# Toke
+
+An API and website for definining token piles and drawing.
+
+## API
+
+[api.ts](#API "save:")
+
+	_"firebase::config"
+
+	interface Token {
+		color?: string,
+		name?: string,
+		icon?: string
+	}
+
+	interface Game {
+		tokens: Token[]
+	}
+
+	function createGame() {
+
+	}
+
+
+## Tests
+
+[tests.ts](#Tests "save:")
+
+	_"API"
+
+## Plumbing
+
+[firebase](firebase.lit "load:")

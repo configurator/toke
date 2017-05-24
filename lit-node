@@ -1,0 +1,25 @@
+#!/bin/bash
+
+colortitle() {
+	# Usage: colortitle ansi_color text
+	# Writes a title with the specified ANSI color, in bold, with a blank line before it
+
+	local color="$1"
+	shift
+
+	echo -e "\033[$color;1m$*\033[0m"
+}
+green() { colortitle 32 "$@"; }
+
+cd "$(dirname "$0")"
+
+rm -rf build
+
+green Building
+literate-programming -s . toke.lit
+
+for file in build/*.ts; do
+	echo
+	green Running "$file"
+	ts-node "$file"
+done

@@ -1,0 +1,13 @@
+## config
+
+	import * as firebase from 'firebase';
+
+	var config = {
+		apiKey: "AIzaSyAbnup59Ioo2OiTewzLwkcct621CSbZrsk",
+		authDomain: "toke-917b6.firebaseapp.com",
+		databaseURL: "https://toke-917b6.firebaseio.com",
+		projectId: "toke-917b6",
+		storageBucket: "toke-917b6.appspot.com",
+		messagingSenderId: "862962438398"
+	};
+	firebase.initializeApp(config);

@@ -1,0 +1,20 @@
+{
+  "name": "toke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "toke.lit",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/configurator/toke.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/configurator/toke/issues"
+  },
+  "homepage": "https://github.com/configurator/toke#readme",
+  "dependencies": {
+    "@types/firebase": "^2.4.31",
+    "firebase": "^4.0.0"
+  }
+}
